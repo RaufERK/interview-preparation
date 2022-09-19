@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "start": "tsc && node dist/longestCommonPrefix.js"
+  },
+  "devDependencies": {
+    "typescript": "^4.8.3"
+  }
+}
