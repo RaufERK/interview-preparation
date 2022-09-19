@@ -1,9 +1,9 @@
-function longestCommonPrefix(param) {
-    if (param === void 0) { param = []; }
+"use strict";
+function longestCommonPrefix(param = []) {
     if (param.length === 0)
         return [];
-    var result = '';
-    var resultfirstWordArr = param[0].split('');
+    let result = '';
+    const resultfirstWordArr = param[0].split('');
     // for (let index = 0; index < firstWordArr.length; index++) {
     //   const element = firstWordArr[index]
     //   console.log(element)
@@ -14,7 +14,8 @@ function longestCommonPrefix(param) {
     // resultfirstWordArr.forEach()
     return param;
 }
-var stingArr = ['flower', 'flow', 'flight'];
-console.log(stingArr);
-var result = longestCommonPrefix(stingArr);
+console.clear();
+console.log('=====>');
+const stingArr = ['flower', 'flow', 'flight', 'russsh'];
+const result = longestCommonPrefix(stingArr);
 console.log(result);

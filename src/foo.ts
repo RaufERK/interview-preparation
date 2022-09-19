@@ -16,8 +16,9 @@ function longestCommonPrefix(param: string[] = []): string[] {
 
   return param
 }
+console.clear()
+console.log('=====>')
 
-const stingArr: string[] = ['flower', 'flow', 'flight']
-console.log(stingArr)
+const stingArr: string[] = ['flower', 'flow', 'flight', 'russsh']
 const result = longestCommonPrefix(stingArr)
 console.log(result)
