@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "start": "concurrently -k -n TS,JS -c yellow,blue \"tsc -w\" \"nodemon -w dist -q dist/foo.js\""
+    "start": "concurrently -k -n TS,JS -c yellow,blue \"tsc -w\" \"nodemon -w dist -q dist/longestCommonPrefix.js\""
   },
   "devDependencies": {
     "typescript": "^4.8.3"
