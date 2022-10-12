@@ -5,7 +5,7 @@ console.log(isValid('()[]{}'))
 console.log(isValid('(]'))
 
 function isValid(s: string): boolean {
-  const alphabet = {
+  const alphabet: { [index: string]: string } = {
     '{': '}',
     '[': ']',
     '(': ')',
