@@ -22,6 +22,5 @@ function isValid(s) {
             stack.push(alphabet[element]);
         }
     }
-    // console.log('FINALL==>', stack)
     return stack.length === 0 ? true : false;
 }
