@@ -27,7 +27,7 @@ var mergeTwoLists = function (list1: LLI, list2: LLI | null): LLI | null {
   let first = current
 
   while (list1 || list2) {
-    if (!list2 || list1.val <= list2?.val) {
+    if (!list2 || list1?.val <= list2?.val) {
       current.next = list1
       current = list1
       list1 = list1?.next!

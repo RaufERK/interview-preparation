@@ -20,7 +20,7 @@ var mergeTwoLists = function (list1, list2) {
     let current = newEl();
     let first = current;
     while (list1 || list2) {
-        if (!list2 || list1.val <= (list2 === null || list2 === void 0 ? void 0 : list2.val)) {
+        if (!list2 || (list1 === null || list1 === void 0 ? void 0 : list1.val) <= (list2 === null || list2 === void 0 ? void 0 : list2.val)) {
             current.next = list1;
             current = list1;
             list1 = list1 === null || list1 === void 0 ? void 0 : list1.next;
