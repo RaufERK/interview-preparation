@@ -1,4 +1,5 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 function longestCommonPrefix(param = []) {
     let resultPrefix = '';
     const firstEl = param[0];

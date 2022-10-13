@@ -21,3 +21,4 @@ const strs3 = ['cir', 'car']
 console.log('==>', longestCommonPrefix(strs1))
 console.log('==>', longestCommonPrefix(strs2))
 console.log('==>', longestCommonPrefix(strs3))
+export {}

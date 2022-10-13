@@ -1,4 +1,6 @@
-const roman = {
+const roman: {
+  [index: string]: number
+} = {
   I: 1,
   V: 5,
   X: 10,

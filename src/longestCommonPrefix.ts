@@ -18,3 +18,5 @@ console.log(longestCommonPrefix(['c', 'acc', 'ccc']))
 console.log(longestCommonPrefix(['reflower', 'flow', 'flight']))
 console.log(longestCommonPrefix(['dog', 'racecar', 'car']))
 console.log(longestCommonPrefix(['dog', 'racecar', 'car']))
+
+export {}

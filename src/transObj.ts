@@ -1,4 +1,8 @@
-const bigObject = {
+interface strObj {
+  [index: string]: string | strObj
+}
+
+const bigObject: strObj = {
   value1: '111',
   value11: '12121',
   value2: {
@@ -12,7 +16,7 @@ const bigObject = {
   },
 }
 
-const myFoo = (path = '', paramObj: object): object => {
+const myFoo = (path = '', paramObj: strObj): strObj => {
   let result = {}
   for (let index in paramObj) {
     const value: string | object = paramObj[index]
