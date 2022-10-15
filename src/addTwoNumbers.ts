@@ -12,17 +12,25 @@
 
 console.log('==== START =====>')
 
+const printList = (list: ListNode) => {
+  while (list) {
+    console.log('==>', list.val)
+    list = list.next
+  }
+}
+
 type ListNode = {
   val: number
   next: ListNode | null
-}
+} | null
 
 function addTwoNumbers(
   l1: ListNode | null,
   l2: ListNode | null
 ): ListNode | null {
-  let result: ListNode | null = null
-  let delta: number = 0
+  const resArr: number[] = []
+  let result: ListNode = null
+  let delta = 0
 
   while (l1 || l2 || delta) {
     let value1 = 0
@@ -39,17 +47,35 @@ function addTwoNumbers(
 
     const val = (value1 + value2 + delta) % 10
     delta = value1 + value2 + delta >= 10 ? 1 : 0
-    result = { val, next: result }
+    resArr.push(val)
   }
+  resArr.reverse().forEach((val) => (result = { val, next: result }))
+
   return result
 }
+
+// const list1 = {
+//   val: 2,
+//   next: {
+//     val: 4,
+//     next: {
+//       val: 9,
+//       next: null,
+//     },
+//   },
+// }
+
+// const list2 = {
+//   val: 5,
+//   next: { val: 6, next: { val: 4, next: { val: 9, next: null } } },
+// }
 
 const list1 = {
   val: 2,
   next: {
     val: 4,
     next: {
-      val: 9,
+      val: 3,
       next: null,
     },
   },
@@ -57,12 +83,9 @@ const list1 = {
 
 const list2 = {
   val: 5,
-  next: { val: 6, next: { val: 4, next: { val: 9, next: null } } },
+  next: { val: 6, next: { val: 4, next: null } },
 }
 
-let res = addTwoNumbers(list1, list2)
+printList(addTwoNumbers(list1, list2))
 
-while (res) {
-  console.log('==>', res.val)
-  res = res.next
-}
+export = {}
